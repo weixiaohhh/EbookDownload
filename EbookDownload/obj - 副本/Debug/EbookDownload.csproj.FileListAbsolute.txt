@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\vs\EbookDownload\EbookDownload\obj\Debug\Resources\Icons.baml
+C:\Users\Administrator\Desktop\vs\EbookDownload\EbookDownload\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\Administrator\Desktop\vs\EbookDownload\EbookDownload\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\vs\EbookDownload\EbookDownload\obj\Debug\views\JiuMoResultControl.g.cs
+C:\Users\Administrator\Desktop\vs\EbookDownload\EbookDownload\obj\Debug\views\ePUBeeResultControl.g.cs
+C:\Users\Administrator\Desktop\vs\EbookDownload\EbookDownload\obj\Debug\views\ResultWindow.g.cs
+C:\Users\Administrator\Desktop\vs\EbookDownload\EbookDownload\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\vs\EbookDownload\EbookDownload\obj\Debug\EbookDownload_MarkupCompile.cache
+C:\Users\Administrator\Desktop\vs\EbookDownload\EbookDownload\obj\Debug\EbookDownload_MarkupCompile.lref
+C:\Users\Administrator\Desktop\vs\EbookDownload\EbookDownload\obj\Debug\views\JiuMo1ResultControl.g.cs

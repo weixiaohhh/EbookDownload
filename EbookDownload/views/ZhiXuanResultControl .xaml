@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="EbookDownload.views.ZhiXuanResultControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EbookDownload.views"
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="900">
+    <Grid>
+        <ListView x:Name="listView" Margin="10,10,0,10" ScrollViewer.HorizontalScrollBarVisibility="Disabled" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="书名" Width="200">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding title}" TextWrapping = "Wrap"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="描述" Width="300" >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding desc}" TextWrapping = "Wrap"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="封面" Width="150"  >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image  Name="img" Source="{Binding imgSource}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="分类"  Width="100" >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                   <Hyperlink  Name="HypeLink1"  Click="TypeLink_Click"   NavigateUri="{Binding sortHref}" >
+                                    <TextBlock Text="{Binding sort}"/>
+                                </Hyperlink>
+                                </TextBlock>
+
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+
+                    </GridViewColumn>
+                    
+                    <GridViewColumn Header="下载地址"  Width="100" >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                   <Hyperlink  Name="HypeLink1"  Click="downloadLink_Click"   NavigateUri="{Binding Addr}" >
+                                    网址
+                                </Hyperlink>
+                                </TextBlock>
+
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    
+                    </GridViewColumn>
+
+                  
+                    <!--<GridViewColumn Header="作者" Width="100" />
+                    <GridViewColumn Header="出版社" Width="100" />
+                    <GridViewColumn Header="价格" Width="60" />
+                    <GridViewColumn Header="库存" Width="60" />-->
+
+                </GridView>
+
+            </ListView.View>
+
+        </ListView>
+
+    </Grid>
+</UserControl>
